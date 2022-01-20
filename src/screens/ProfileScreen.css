@@ -1,0 +1,104 @@
+.profileScreen{
+    height:100vh;
+    color:white;
+    /* position: relative;
+    height: 100%; */
+    
+}
+/* 
+.profileScreen_body{
+    display: flex;
+    flex-direction: column;
+    min-width:25%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:160px;
+    max-width:800px;
+
+} */
+
+.profileScreen_body{
+  position: absolute;
+  top: 17.5%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  padding: 20px;
+  left: 0;
+  right: 0;
+  max-width:800px;
+
+}
+
+
+
+.profileScreen_info{
+    display:flex;
+}
+
+
+.profileScreen_details{
+color:white;
+margin-left:25px;
+flex:1;
+}
+
+.profileScreen_body>h1{
+    font-size:2.125rem;
+    font-weight:400;
+    border-bottom:1px solid #282c2d;
+    margin-bottom:20px;
+}
+
+
+.profileScreen_details>h2{
+    background-color:gray;
+    padding:15px;
+    font-size:15px;
+    padding-left:20px;
+
+}
+
+.profileScreen_signOut{
+    padding:10px 20px;
+    font-size:1rem;
+    margin-top: 5%;
+    width:100%;
+    color:#fff;
+    background-color:#e50914;
+    font-weight:600;
+    border:none;
+    cursor:pointer;
+
+
+}
+
+.profileScreen_plans{
+    margin-top:20px;
+}
+
+.profileScreen_plans>h3{
+    border-bottom:1px solid #282c2d;
+    padding-bottom:10px;
+}
+
+.profileScreen_info>img{
+    height:100px;
+}
+
+.profileScreen_plans>pre{
+    color:#ffffff;
+    border-bottom:1px solid #282c2d;
+    padding-bottom:10px;
+    font-size:1.17em;
+    font-weight:600;
+    padding-top: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+.profileScreen_plans>pre:hover{
+    color:#e50914;
+    cursor:pointer;
+}
