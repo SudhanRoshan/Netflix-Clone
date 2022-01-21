@@ -2,7 +2,7 @@ import React from 'react'
 import {useSelector} from "react-redux"
 import {selectUser} from "../features/userSlice"
 import "../styles/ProfileScreen.css"
-import Nav from "../Nav"
+import Nav from "../components/Nav"
 import {auth} from "../firebase"
 
 function ProfileScreen() {
