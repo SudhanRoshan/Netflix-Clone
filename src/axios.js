@@ -1,7 +1,7 @@
 import axios from "axios";
-
+import {getMovie} from './config'
 const instance=axios.create({
-    baseURL:"https://api.themoviedb.org/3"
+    baseURL:getMovie
 });
 
 export default instance;

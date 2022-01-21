@@ -4,9 +4,9 @@ import axios from "../axios";
 import { useState, useEffect } from "react";
 import YouTube from "react-youtube";
 import movieTrailer from "movie-trailer";
+import {getMoiveImage as getMoiveImage_baseUrl} from "../config"
 
 function Row({ title, fetchUrl, isLargeRow = false }) {
-  const base_url = "https://image.tmdb.org/t/p/original/";
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
   useEffect(() => {
@@ -31,9 +31,6 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
         setTrailerUrl("");
     } else {
         const url = await movieTrailer(movie?.title || "")
-        console.log("url")
-        console.log(url)
-        console.log("url")
         const urlParams = new URLSearchParams(new URL(url).search);
         setTrailerUrl(urlParams.get("v"))
     }
@@ -51,7 +48,7 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
                 className={`row_poster ${isLargeRow && "row_posterLarge"}`}
                 key={movie.id}
                 onClick={() => handleClick(movie)}
-                src={`${base_url}${
+                src={`${getMoiveImage_baseUrl}${
                   isLargeRow ? movie.poster_path : movie.backdrop_path
                 }`}
                 alt={movie.name}
