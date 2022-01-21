@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import "./PlanScreen.css"
+import "../styles/PlanScreen.css"
 
 function PlansScreen() {
     const [products,setProducts]=useState([]);

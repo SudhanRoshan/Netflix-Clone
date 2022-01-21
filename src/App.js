@@ -1,6 +1,6 @@
 import React from 'react';
 import {useEffect} from "react";
-import './App.css';
+import './styles/App.css';
 import HomeScreen from './screens/HomeScreen';
 import LoginScreen from "./screens/LoginScreen";
 import {

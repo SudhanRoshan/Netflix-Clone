@@ -1,5 +1,5 @@
 import React from 'react'
-import "./LoginScreen.css"
+import "../styles/LoginScreen.css"
 import {useState} from "react"
 import SignupScreen from "./SignupScreen"
 
